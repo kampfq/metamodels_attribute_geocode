@@ -4,8 +4,8 @@
 namespace KampfQ\AttributeGeocodeBundle\Attribute;
 
 use Doctrine\DBAL\Connection;
-use KampfQ\Attribute\AbstractSimpleAttributeTypeFactory;
-use KampfQ\Helper\TableManipulator;
+use MetaModels\Attribute\AbstractSimpleAttributeTypeFactory;
+use MetaModels\Helper\TableManipulator;
 
 /**
  * Attribute type factory for geocode attributes.
