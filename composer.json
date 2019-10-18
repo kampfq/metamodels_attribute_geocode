@@ -1,0 +1,58 @@
+{
+  "name": "kampfq/attribute_geocode",
+  "description": "Metamodels attribute for geocode",
+  "version": "1.0",
+  "keywords": [
+    "contao",
+    "metamodels",
+    "attribute",
+    "geocode",
+    "nontranslatable"
+  ],
+  "type": "contao-bundle",
+  "homepage": "http://now.metamodel.me/",
+  "license": "LGPL-3.0-or-later",
+  "authors": [
+    {
+      "name": "Benjamin Issleib",
+      "email": "benjamin@issleib.org",
+      "role": "Developer"
+    }
+  ],
+  "support": {
+    "email": "benjamin@issleib.org"
+  },
+  "require": {
+    "php": "^7.1",
+    "contao-community-alliance/dc-general": "^2.1.0",
+    "contao/core-bundle": "^4.4.8",
+    "metamodels/core": "^2.1",
+    "netzmacht/contao-leaflet-geocode-widget": "^1.2",
+    "symfony/dependency-injection": "^3.3 || ^4.0",
+    "symfony/http-kernel": "^3.3 || ^4.0"
+  },
+  "require-dev": {
+    "contao/manager-plugin": "^2.1",
+    "menatwork/contao-multicolumnwizard-bundle": "^3.4",
+    "phpcq/all-tasks": "^1.2"
+  },
+  "autoload": {
+    "psr-4": {
+      "KampfQ\\AttributeGeocodeBundle\\": "src"
+    },
+    "files": [
+      "src/deprecated-autoload.php"
+    ]
+  },
+  "autoload-dev": {
+    "psr-4": {
+      "KampfQ\\AttributeGeocodeBundle\\Test\\": "tests"
+    }
+  },
+  "extra": {
+    "contao-manager-plugin": "KampfQ\\AttributeGeocodeBundle\\ContaoManager\\Plugin"
+  },
+  "config": {
+    "sort-packages": true
+  }
+}
