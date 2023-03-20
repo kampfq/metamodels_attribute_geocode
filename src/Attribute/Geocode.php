@@ -14,6 +14,13 @@ class Geocode extends BaseSimple
      */
     public function getSQLDataType()
     {
+        // @codingStandardsIgnoreStart
+        @trigger_error(
+            'Class "' . __CLASS__ . '" is a managed attribute you should not call "' . __METHOD__ . '".',
+            E_USER_DEPRECATED
+        );
+        // @codingStandardsIgnoreEnd
+
         return 'varchar(255) NOT NULL default \'\'';
     }
 

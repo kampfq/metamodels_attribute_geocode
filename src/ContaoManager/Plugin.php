@@ -1,6 +1,5 @@
 <?php
 
-
 namespace KampfQ\AttributeGeocodeBundle\ContaoManager;
 
 use Contao\ManagerPlugin\Bundle\BundlePluginInterface;
@@ -23,7 +22,7 @@ class Plugin implements BundlePluginInterface
             BundleConfig::create(MetaModelsAttributeGeocodeBundle::class)
                 ->setLoadAfter(
                     [
-						MetaModelsCoreBundle::class,
+                        MetaModelsCoreBundle::class,
                     ]
                 )
                 ->setReplace(['metamodelsattribute_geocode'])
