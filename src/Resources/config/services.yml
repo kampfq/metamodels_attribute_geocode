@@ -1,8 +1,12 @@
 services:
-    metamodels.attribute_geocode.factory:
-        class: KampfQ\AttributeGeocodeBundle\Attribute\AttributeTypeFactory
-        arguments:
-            - "@database_connection"
-            - "@metamodels.table_manipulator"
-        tags:
-          - { name: metamodels.attribute_factory }
+  metamodels.attribute_geocode.factory:
+    class: KampfQ\AttributeGeocodeBundle\Attribute\AttributeTypeFactory
+    arguments:
+      - "@database_connection"
+      - "@metamodels.table_manipulator"
+    tags:
+      - { name: metamodels.attribute_factory }
+
+  KampfQ\AttributeGeocodeBundle\Schema\DoctrineSchemaGenerator:
+    tags:
+      - { name: metamodels.schema-generator.doctrine }
