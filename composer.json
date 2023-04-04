@@ -1,7 +1,7 @@
 {
   "name": "kampfq/metamodels_attribute_geocode",
   "description": "Metamodels attribute for geocode with widget at backend",
-  "version": "1.3",
+  "version": "1.4",
   "keywords": [
     "contao",
     "metamodels",
